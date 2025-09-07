@@ -1,4 +1,4 @@
-/* Reset some default styles */
+n/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +40,22 @@ nav .logo {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+nav img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 1rem;
+    border: 2px solid rgba(0, 128, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+nav img:hover {
+    border-color: #0080ff;
+    box-shadow: 0 0 15px rgba(0, 128, 255, 0.5);
+    transform: scale(1.05);
 }
 
 nav ul {
@@ -109,6 +125,37 @@ h2 {
     text-shadow: 0 0 20px rgba(0, 128, 255, 0.3);
 }
 
+#about {
+    text-align: center;
+}
+
+.about-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: contain;
+    border: 4px solid rgba(0, 128, 255, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 128, 255, 0.4);
+    transition: all 0.3s ease;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+    background-color: #1a1a2e;
+}
+
+.about-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 128, 255, 0.6);
+    border-color: #0080ff;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
 .project {
     margin-bottom: 1rem;
     padding: 1rem;
@@ -124,12 +171,14 @@ h2 {
 
 .project img {
     width: 100%;
-    max-width: 800px;
+    max-width: 200px;
+    max-height: 150px;
     border-radius: 10px;
     transition: all 0.3s ease;
     display: block;
     margin-bottom: 0.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
 }
 
 .project img:hover {

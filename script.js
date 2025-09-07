@@ -14,7 +14,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 // Typing animation for the about section
-const aboutText = "Sou um programador apaixonado por desenvolvimento web. Especializo-me em criar soluções inovadoras usando HTML, CSS, JavaScript e PHP.";
+const aboutText = "Olá meu nome é Gustavo Baumann, e aqui estão um pouco dos meu projetos desenvolvidos ao longo da minha jornada profissional! ";
 const aboutElement = document.querySelector('#about p');
 let index = 0;
 
